@@ -1,6 +1,11 @@
+    <!-- Previous/next page links - only displayed on page 2+, controlled in JS -->
+    <div id='pagination-upper'>
+    </div>
+
+    <div id="paginate_container" paginate="{{site.paginate}}" url="{{site.baseurl}}tags/{{ page.tag }}/">
     <!-- This is the post loop - each post will be output using this markup -->
     {% for post in site.tags[page.tag] %}
-    <article class="post">
+    <article class="post" index="{{forloop.index}}">
         <header class="post-header">
             <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url | remove: '/' }}">{{ post.title }}</a></h2>
         </header>
@@ -15,14 +20,16 @@
             {% if post.tags.size > 0 %} 
                 on 
                 {% for tag in post.tags %}
-                    {% if forloop.index == post.tags.size %}
-                       <a href='{{ site.baseurl }}tags/{{ tag }}/index.html'>{{ tag | capitalize }}</a>
-                    {% else %}
-                       <a href='{{ site.baseurl }}tags/{{ tag }}/index.html'>{{ tag | capitalize }}</a>,
-                    {% endif %}   
+                    <a href='{{ site.baseurl }}tags/{{ tag }}/index.html'>{{ tag | capitalize }}</a>
                 {% endfor %}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
         </footer>
     </article>
     {% endfor %}
+    </div>
+
+    <div id='pagination-lower'>
+    </div>
+
+    <script type="text/javascript" src="{{ site.baseurl }}assets/js/pagination.js"></script>

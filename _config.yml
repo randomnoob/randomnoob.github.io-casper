@@ -1,7 +1,7 @@
 # Jykell configuration
 markdown: kramdown
-highlighter: rouge
-paginate: 5
+#highlighter: rouge
+paginate: 2
 
 #TODO: jasper why do we need it
 #language: 'en-uk'
@@ -44,34 +44,3 @@ exclude: [vendor]
 # Disqus comments as a per-post basis
 # ...
 
-#TODO: jasper: check if we need all this
-
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
-
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-#safe: false
-#lsi: false
-#username: biomadeira
-#repo: jasper
-#branch: master
-#relative_source: ../jasper/
-#destination: ../jasper-pages/
-#production_url:  https://biomadeira.github.io/jasper/
-#source_url:      https://github.com/biomadeira/jasper/
-
-#exclude:
-#  - README.md
-#  - Rakefile
-#  - Gemfile
-#  - Gemfile.lock
-#  - changelog.md
-#  - "*.Rmd"
-#  - vendor
-#  - .travis.yml

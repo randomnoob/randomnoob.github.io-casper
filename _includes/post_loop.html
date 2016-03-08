@@ -20,11 +20,7 @@
             {% if post.tags.size > 0 %} 
                 on 
                 {% for tag in post.tags %}
-                    {% if forloop.index == post.tags.size %}
-                       <a href='{{ site.baseurl }}tags/{{ tag }}/index.html'>{{ tag | capitalize }}</a>
-                    {% else %}
-                       <a href='{{ site.baseurl }}tags/{{ tag }}/index.html'>{{ tag | capitalize }}</a>,
-                    {% endif %}   
+                   <a href='{{ site.baseurl }}tags/{{ tag }}/index.html'>{{ tag | capitalize }}</a>
                 {% endfor %}
             {% endif %}
             <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
