@@ -1,8 +1,8 @@
 ---
 layout: default
 class: 'tag-template'
-navigation: True
-current: tag
+navigation: true
+logo: assets/images/ghost.png
 ---
 <!--TODO: jasper: check-->
 <!--cover: false-->
@@ -27,6 +27,7 @@ current: tag
             {% if page.description %}
                 {{ page.description }}
             {% elsif page.tag %}
+                <!--TODO: fixme-->
 			    A {{ paginator.total_posts }}-post collection
             {% endif %}
             </h2>
