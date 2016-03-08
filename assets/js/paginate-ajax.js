@@ -6,12 +6,11 @@
 
 var do_paginate = function() {
     var paginate = parseInt(document.getElementById('paginate_container').getAttribute('paginate'));
-    var total_items = document.querySelectorAll('.post').length;//parseInt(document.getElementById('paginate_container').getAttribute('total'));
+    var total_items = document.querySelectorAll('.post').length;
     var url = document.getElementById('paginate_container').getAttribute('url');
 
     var total_pages = parseInt((total_items - 1 ) / paginate) + 1;
 
-    var pathName = window.location.pathname;
     var hashName = window.location.hash;
 
     // parse URL hash
@@ -20,6 +19,8 @@ var do_paginate = function() {
     var page = 1;
     if (match !== null)
         page = parseInt(match[1]);
+
+    console.log(page, total_pages, total_items);
 
     if (page > 0 && page <= total_pages) {
         var index_first = (page - 1) * paginate;
@@ -31,34 +32,25 @@ var do_paginate = function() {
             var index = posts[i].getAttribute('index') - 1;
             if (index < index_first || index >= index_last) {
                 posts[i].style.display = 'none';
-                //document.getElementById('paginate_container').removeChild(posts[i]);
             } else {
                 posts[i].style.display = '';
             }
         }
 
-        var pagHtml = '';
-        pagHtml = pagHtml + '<nav class="pagination" role="pagination">';
-        if (page > 1)
-            pagHtml = pagHtml + '<a class="newer-posts" href="' + url + '#page' + (page-1) + '/" title="Previous Page">&laquo; Newer Posts</a>';
-        pagHtml = pagHtml + '<span class="page-number"> Page ' + page + ' of ' + total_pages + ' </span>';
-        if (page < total_pages)
-            pagHtml = pagHtml + '<a class="older-posts" href="' + url + '#page' + (page+1) + '/" title="Next Page">Older Posts &raquo;</a>';
-        pagHtml = pagHtml + '</nav>';
-
-        if (page > 1)
-            document.getElementById('pagination-upper').innerHTML = pagHtml;
-        else
-            document.getElementById('pagination-upper').innerHTML = '';
-
-        document.getElementById('pagination-lower').innerHTML = pagHtml;
+        var urlPrevious = url + '#page' + (page-1) + '/';
+        var urlNext = url + '#page' + (page+1) + '/';
+        var urlFirst = urlPrevious;
+        create_pagination_elems(page, total_pages, urlPrevious, urlNext, urlFirst);
     } else {
         window.location = '/404.html';
     }
 };
 
 window.onhashchange = function() {
-    //location.reload();
+     //// for fake reload
+     //location.reload();
+
+    // without fake reload
     do_paginate();
     scroll(0,0);
 };
