@@ -1,29 +1,29 @@
-casper:
+-
   id: casper
   name: Casper McFadden
   bio: A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.
   location: Maine, USA
   image: assets/images/team/casper.png
   url: http://aufdeutsch.github.io
-martin:
+-
   id: martin
   name: Martin Luther King
   bio: An American pastor, activist, humanitarian. People know me for leading the African-American Civil Rights movement using nonviolent civil disobedience.
   location: Memphis, Tennessee
   image: assets/images/team/mlk.jpg
-lewis:
+-
   id: lewis
   name: Lewis Carroll
   bio: My real name is Charles Lutwidge Dodgson, but people call me Lewis. I'm an English writer, mathematician, logician, Anglican deacon and photographer. People know me best for writing about Alice.
   location: Cheshire, England
   image: assets/images/team/lewis.jpg
-edgar:
+-
   id: edgar
   name: Edgar Rice Burroughs
   bio: I'm an American novelist, best known for my work writing about a brave jungle hero called Tarzan and his muse, Jane.
   location: Chicago, Illinois
   image: assets/images/team/edgar.gif
-abe:
+-
   id: abe
   name: Abraham Lincoln
   bio: I was the 16th president of the USA until I was assassinated in April of 1963. I led the US through its Civil War - its bloodiest and greatest moral, constitutional and political crisis.
