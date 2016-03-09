@@ -3,7 +3,7 @@
         <!-- Jekyll: controlled in JS-->
     </div>
 
-    <div id="paginate_container" paginate="{{site.paginate}}" url="{{site.baseurl}}tag/{{ page.tag }}/">
+    <div id="paginate_container">
     <!-- This is the post loop - each post will be output using this markup -->
     {% for post in include.posts %}
     <article class="post" index="{{forloop.index}}">
@@ -40,17 +40,14 @@
         <!-- Jekyll: controlled in JS-->
     </div>
 
-    <script type="text/javascript" src="{{ site.baseurl }}assets/js/pagination_elements.js"></script>
-    {% if include.type == "posts" %}
+    <script type="text/javascript" src="{{ site.baseurl }}assets/js/paginate.js"></script>
+
     <script>
-        create_pagination_elems(
-            {{ paginator.page }},
-            {{ paginator.total_pages }},
-            "{{ site.baseurl }}page{{ paginator.previous_page }}/",
-            "{{ site.baseurl }}page{{ paginator.next_page }}/",
-            "{{ site.baseurl }}"
-        );
+        var pagination_step = function() {
+            do_paginate("{{include.url}}", {{site.pagination}});
+            scroll(0,0);
+        };
+        window.addEventListener("hashchange", pagination_step, false);
+        pagination_step();
     </script>
-    {% else %}
-    <script type="text/javascript" src="{{ site.baseurl }}assets/js/paginate-ajax.js"></script>
-    {% endif %}
+

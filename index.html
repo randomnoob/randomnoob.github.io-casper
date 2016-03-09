@@ -30,8 +30,21 @@ current: home
 
 <!-- The main content area on the homepage -->
 <main id="content" class="content" role="main">
-
     <!-- The tag below includes the post loop - partials/loop.hbs -->
-    {% include loop.html posts=paginator.posts type="posts" %}
+    {% assign loop_url = {{site.baseurl}}/ %}
+    {% include loop.html posts=site.posts url=loop_url %}
+
+    <script>
+        var checkBodyClass = function() {
+            var bodyNode = document.querySelector('body');
+            if (bodyNode.classList.contains('home-template') && (window.location.hash.indexOf('page') > -1)) {
+                bodyNode.classList.remove('home-template');
+                bodyNode.classList.add('paged');
+                bodyNode.classList.add('archive-template');
+            }
+        };
+        window.addEventListener("hashchange", checkBodyClass, false);
+        checkBodyClass();
+    </script>
 
 </main>
