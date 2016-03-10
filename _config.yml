@@ -14,5 +14,7 @@ permalink: /:title
 
 #TODO: jasper: add later
 #google_analytics: UA-69281367-1
-#disqus: username
+
+# username for disqus comments, leave as '-' to turn them off
+disqus: '-'
 

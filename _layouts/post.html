@@ -1,7 +1,7 @@
 ---
 layout: default
 class: 'post-template'
-disqus: false
+disqus: true
 navigation: true
 logo: 'assets/images/ghost.png'
 ---
@@ -97,18 +97,19 @@ logo: 'assets/images/ghost.png'
             <!--TODO: jasper: move to another branch-->
             <!-- Add Disqus Comments -->
 
+
             {% assign disqus = layout.disqus %}
             {% if page.disqus == false or page.disqus == true %}
-                {% assign disqus = page.disqus %}
+              {% assign disqus = page.disqus %}
             {% endif %}
-            {% if disqus %}
+
+            {% if site.disqus %}
+              {% if disqus and site.disqus != '-' %}
                 {% include disqus.html %}
+              {% endif %}
             {% endif %}
-            
         </footer>
-
     </article>
-
 </main>
 
 <aside class="read-next">
