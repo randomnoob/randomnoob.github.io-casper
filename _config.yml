@@ -8,6 +8,7 @@ description: "A beautiful narrative written with the world's most elegant publis
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
+url: http://127.0.0.1:4000
 
 # Permalinks
 permalink: /:title
