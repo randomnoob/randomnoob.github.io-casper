@@ -14,7 +14,7 @@
             <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ site.baseurl }}{{ post.url | remove: '/' }}">&raquo;</a></p>
         </section>
         <footer class="post-meta">
-            {% assign author = site.data.authors[post.author] %}
+            {% assign author = site.data.authors | where: "id", post.author | first %}
             {% if author.image %}<img class="author-thumb" src="{{ site.baseurl }}{{ author.image }}" alt="Author image" nopin="nopin" />{% endif %}
             <!-- author -->
             <a href='{{ site.baseurl }}author/{{ author.id }}'>{{ author.name }}</a>

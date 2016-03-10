@@ -50,7 +50,7 @@ current: tag
 
     <!--<h1>author_posts</h1>-->
     <!-- The tag below includes the post loop - partials/loop.hbs -->
-    {% assign loop_url = "{{site.baseurl}}/author/{{author_id}}/" %}
+    {% assign loop_url = {{site.baseurl}}/author/{{author_id}}/ %}
     {% include loop.html posts=author_posts url=loop_url %}
 
 </main>

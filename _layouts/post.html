@@ -51,7 +51,7 @@ logo: 'assets/images/ghost.png'
         </section>
 
         <footer class="post-footer">
-            {% assign author = site.data.authors[page.author] %}
+            {% assign author = site.data.authors | where: "id", page.author | first %}
 
             <!-- Everything inside the #author tags pulls data from the author -->
             <!-- #author-->

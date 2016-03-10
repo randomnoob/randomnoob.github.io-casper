@@ -39,7 +39,7 @@ logo: assets/images/ghost.png
 <!-- The main content area on the homepage -->
 <main id="content" class="content" role="main">
     <!-- The tag below includes the post loop - partials/loop.hbs -->
-    {% assign loop_url = "{{site.baseurl}}/tag/{{tag}}/" %}
+    {% assign loop_url = {{site.baseurl}}/tag/{{tag}}/ %}
     {% include loop.html posts=all_tags url=loop_url %}
 
 </main>
