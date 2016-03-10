@@ -1,6 +1,6 @@
 # Jykell configuration
 markdown: kramdown
-pagination: 2
+pagination: 5
 
 # Website info
 name: 'Finding The Way Home'
