@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: false
+cover: 'assets/images/demo1.jpg'
 title: Gettysburg Address
 date:   1863-11-19 10:18:00
 tags: fiction
