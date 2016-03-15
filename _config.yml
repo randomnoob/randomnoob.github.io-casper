@@ -14,7 +14,7 @@ url: http://aufdeutsch.github.io
 permalink: /:title
 
 # ID for Google analyticsm leave as '-' to turn it off
-google_analytics: UA-75106109-1
+google_analytics: '-'
 # Username for disqus comments, leave as '-' to turn them off
 disqus: '-'
 
