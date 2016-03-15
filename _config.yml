@@ -13,9 +13,8 @@ url: http://aufdeutsch.github.io
 # Permalinks
 permalink: /:title
 
-#TODO: jasper: add later
-#google_analytics: UA-69281367-1
-
-# username for disqus comments, leave as '-' to turn them off
-disqus: 'aufdeutschgithubio'
+# ID for Google analyticsm leave as '-' to turn it off
+google_analytics: UA-75106109-1
+# Username for disqus comments, leave as '-' to turn them off
+disqus: '-'
 

@@ -55,5 +55,9 @@ nav-closed">
 <!-- [[! The main JavaScript file for Casper ]] -->
 <script type="text/javascript" src="{{ site.baseurl }}Casper/assets/js/index.js"></script>
 
+{% if site.google_analytics and site.google_analytics != '-' %}
+  {% include analytics.html %}
+{% endif %}
+
 </body>
 </html>
