@@ -18,7 +18,7 @@ Initially based on [Jasper](https://github.com/biomadeira/jasper), with focus on
 
 ## Usage
 
-#### Quick Start
+### Quick Start
 1. Fork this repository, rename it to *yourgithubusername.github.io*.
 2. Clone the repository (or make changes directly in the browser).
 3. Change parameters in *_config.yml*
@@ -28,7 +28,7 @@ That's it!
 
 This theme follows [Jekyll-now](https://github.com/barryclark/jekyll-now) Quick Start workflow, so check it for detailed explanation if you got confused by any step.
 
-#### Local deployment (optional)
+### Local deployment (optional)
 1. Install [Ruby](https://www.ruby-lang.org/en/), run `gem install bundler` to install [Bundler](http://bundler.io).
 2. Install Jekyll and plug-ins using a gem provided by Github: `gem install github-pages`
 3. Clone your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
@@ -37,23 +37,24 @@ This theme follows [Jekyll-now](https://github.com/barryclark/jekyll-now) Quick 
 6. Commit any changes and push everything to your GitHub user repository. GitHub Pages will then rebuild and serve your website.
 
 
-#### Authors and tags
+### Content
 To add authors:
 
 1. modify *_data/authors.yml* file
-2. for new authors: if you need an author page, copy the file *author/newauthor.html* to *author/yourauthorname.html*
+2. for new authors: if you need an author page, copy the file *author/NEW.AUTHOR* to *author/yourauthorname.html*
 
 Similarly, to add tags:
 
 1. modify *_data/tags.yml* file
-2. for new tags: if you need a tag page, copy the file *tag/newtag.html* to *tag/yourtagname.html*
+2. for new tags: if you need a tag page, copy the file *tag/NEW.TAG* to *tag/yourtagname.html*
 
 Sorry, step 2 is required in both cases due to Jekyll limitations, as it cannot generate pages dynamically
 
-#### Pagination
+### Details
+##### Pagination
 Unfortunately, Jekyll provides static pagination only for posts. And Github doesn't support custom plugins, so we had to implement pagination dynamically on a client.
 
-#### Repository structure
+##### Repository structure
 - Use **master** branch to start your blog. It has initial scratch to start quickly.
 - **gh-pages** branch contains live demo blog. Checkout it only if you need to look at live demo sources as examples.
 

@@ -5,7 +5,7 @@ navigation: true
 logo: assets/images/ghost.png
 ---
 <!--HACK: tag is parsed from the URL-->
-{% assign tag_id = page.path | replace:'/index.html','/' | split:"/" | reverse | first %}
+{% assign tag_id = page.path | replace:'.html','' | split:"/" | reverse | first %}
 {% assign t = site.data.tags | where:"tag", tag_id | first %}
 {% assign tag= t.tag %}
 

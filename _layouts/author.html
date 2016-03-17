@@ -5,7 +5,7 @@ navigation: true
 logo: assets/images/ghost.png
 ---
 <!--HACK: author_id is parsed from the URL-->
-{% assign author_id = page.path | replace:'/index.html','/' | split:"/" | reverse | first %}
+{% assign author_id = page.path | replace:'.html','' | split:"/" | reverse | first %}
 {% assign author = site.data.authors | where: "id", author_id | first %}
 
 {% assign author_posts = site.posts | where:"author",author_id %}
