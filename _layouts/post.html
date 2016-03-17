@@ -14,7 +14,6 @@ logo: 'assets/images/ghost.png'
 <!-- #post -->
 <header class="main-header post-head {% if page.cover %}" style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
     <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
-        <!--TODO: jasper: check alt name, should be blog.title-->
         {% if layout.logo %}<a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ layout.logo }}" alt="Blog Logo" /></a>{% endif %}
         {% if layout.navigation %}
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
@@ -29,7 +28,6 @@ logo: 'assets/images/ghost.png'
             <section class="post-meta">
             <!-- <a href='{{ site.baseurl }}{{ page.about }}'>{{ site.author }}</a> -->
             <time class="post-date" datetime="{{ page.date | date:'%Y-%m-%d' }}">{{ page.date | date_to_string }}</time>
-                <!--TODO: jasper: check post generation-->
                 <!-- [[tags prefix=" on "]] -->
                 {% if page.tags.size > 0 %} 
                 on 
@@ -94,10 +92,7 @@ logo: 'assets/images/ghost.png'
                 </a>
             </section>
 
-            <!--TODO: jasper: move to another branch-->
             <!-- Add Disqus Comments -->
-
-
             {% assign disqus = layout.disqus %}
             {% if page.disqus == false or page.disqus == true %}
               {% assign disqus = page.disqus %}

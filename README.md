@@ -41,12 +41,12 @@ This theme follows [Jekyll-now](https://github.com/barryclark/jekyll-now) Quick 
 To add authors:
 
 1. modify *_data/authors.yml* file
-2. for new authors: if you need an author page, copy the file *author/NEW.AUTHOR* to *author/yourauthorname.html*
+2. for new authors: if you need an author page, copy the file *author/_NEW.AUTHOR* to *author/yourauthorname.html*
 
 Similarly, to add tags:
 
 1. modify *_data/tags.yml* file
-2. for new tags: if you need a tag page, copy the file *tag/NEW.TAG* to *tag/yourtagname.html*
+2. for new tags: if you need a tag page, copy the file *tag/_NEW.TAG* to *tag/yourtagname.html*
 
 Sorry, step 2 is required in both cases due to Jekyll limitations, as it cannot generate pages dynamically
 

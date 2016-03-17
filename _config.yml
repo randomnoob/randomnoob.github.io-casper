@@ -18,3 +18,12 @@ google_analytics: '-'
 # Username for disqus comments, leave as '-' to turn them off
 disqus: '-'
 
+
+# Internal, don't edit it
+exclude: [
+sh.png,
+Gemfile,
+Gemfile.lock,
+README.md
+]
+
