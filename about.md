@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Feel free to add information about your and your blog here.
+To edit the content of this page, edit **about.md** markdown page in the repository root.
 
-You can find the source code for the Jekyll new theme at:
-include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Specify the path to the cover image using the *cover* parameter in the header of the file, e.g.
+`cover: 'assets/images/path_to_your_image.jpg'`, or leave it empty.
 
-You can find the source code for Jekyll at
-include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+To add items to the sidebar, 
+
