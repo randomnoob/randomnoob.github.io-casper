@@ -1,32 +1,14 @@
+# Edit author's information: id, name, biography; location, image and url are optional.
+# Every author record here should start with "-"
+# Don't forget to create a template in author/ directory for every new author!
 -
-  id: casper
-  name: Casper McFadden
-  bio: A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.
-  location: Maine, USA
+  id: authorname
+  name: Author Name
+  bio: Edit this information in _data/authors.yml, don't forget to rename a template in author/ directory as well
+  location: Example, Loveland
   image: assets/images/team/casper.png
-  url: http://aufdeutsch.github.io
+  url: http://your-url-if-necessary.com
 -
-  id: martin
-  name: Martin Luther King
-  bio: An American pastor, activist, humanitarian. People know me for leading the African-American Civil Rights movement using nonviolent civil disobedience.
-  location: Memphis, Tennessee
-  image: assets/images/team/mlk.jpg
--
-  id: lewis
-  name: Lewis Carroll
-  bio: My real name is Charles Lutwidge Dodgson, but people call me Lewis. I'm an English writer, mathematician, logician, Anglican deacon and photographer. People know me best for writing about Alice.
-  location: Cheshire, England
-  image: assets/images/team/lewis.jpg
--
-  id: edgar
-  name: Edgar Rice Burroughs
-  bio: I'm an American novelist, best known for my work writing about a brave jungle hero called Tarzan and his muse, Jane.
-  location: Chicago, Illinois
-  image: assets/images/team/edgar.gif
--
-  id: abe
-  name: Abraham Lincoln
-  bio: I was the 16th president of the USA until I was assassinated in April of 1963. I led the US through its Civil War - its bloodiest and greatest moral, constitutional and political crisis.
-  location: Kentucky, USA
-  image: assets/images/team/abe.jpg
-
+  id: yetanotherauthor
+  name: author2
+  bio: I'm here as example, delete me :) They forgot to add an author page author/author2.html, so it resolves to 404 :(
