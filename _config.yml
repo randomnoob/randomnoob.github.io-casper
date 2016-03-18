@@ -9,8 +9,8 @@ description: "A beautiful narrative written with the world's most elegant publis
 # edit baseurl to simply '/' if using as your personal page (for project page, use /projectname/)
 # edit url to your site full url, e.g. http://yourname.github.io/ (for personal page) or http://yourname.github.io/projectname/
 # don't forget the trailing slash
-baseurl: /yacasper/
-url: http://mtuner.github.io/yacasper/
+baseurl: /YaCasper/
+url: http://mtuner.github.io/YaCasper/
 
 # Permalinks
 permalink: /:title
