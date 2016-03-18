@@ -6,9 +6,11 @@ pagination: 5
 name: 'Finding The Way Home'
 description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
 
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
-url: http://aufdeutsch.github.io
+# edit baseurl to simply '/' if using as your personal page (for project page, use /projectname/)
+# edit url to your site full url, e.g. http://yourname.github.io/ (for personal page) or http://yourname.github.io/projectname/
+# don't forget the trailing slash
+baseurl: /yacasper/
+url: http://mtuner.github.io/yacasper/
 
 # Permalinks
 permalink: /:title
