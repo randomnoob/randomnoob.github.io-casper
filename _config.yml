@@ -5,15 +5,14 @@ pagination: 5
 # Website title and description
 # It will appear on home page, in your document head meta (for
 # Google search results) and in your feed.xml site description."
-name: Your awesome title
-description: "Write an awesome description for your new site here. Edit title and
-this line in _config.yml."
+name: Deutsch für Algernon
+description: "Die verschíedenen Notizen über Deutschland und Deutsche Leute. Für Alle. Auf Deutsch."
 
 # edit baseurl to simply '/' if using as your personal page (for project page, use /projectname/)
 # edit url to your site full url, e.g. http://yourname.github.io/ (for personal page) or http://yourname.github.io/projectname/
 # don't forget the trailing slash
 baseurl: /
-url: http://mtuner.github.io/
+url: http://aufdeutsch.github.io/
 
 # Permalinks
 permalink: /:title
