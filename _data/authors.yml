@@ -2,8 +2,8 @@
 # Every author record here should start with "-"
 # Don't forget to create a template in author/ directory for every new author!
 -
-  id: authorname
-  name: Author Name
+  id: adams
+  name: Ken Adams
   bio: Edit this information in _data/authors.yml, don't forget to rename a template in author/ directory as well
   location: Example, Loveland
   image: assets/images/team/casper.png

@@ -6,7 +6,7 @@ layout: post
 title: "Welcome to Jekyll!"
 date:   2016-03-18 16:07:56
 tags: testtag testtag2
-author: authorname
+author: adams
 cover: 'assets/images/cover1.jpg'
 ---
 
