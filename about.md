@@ -4,18 +4,25 @@ layout: page
 # This tag is used for highlighting in sidebar, specify it if you add this page to sidebar in _includes/navigation.html
 current: about
 # Title of the page
-title: About
+title: Hallo und Servus!
 # Permalink, as separate pages don't appear in post list
 permalink: /about/
 # path to cover image, e.g. assets/images/path/to/cover.img
-cover: ''
+cover: 'assets/images/about.jpg'
 ---
 
-Feel free to add information about your and your blog here.
-To edit the content of this page, edit **about.md** markdown page in the repository root.
+Seit letzte Jahr wohne ich in Deutschland, und schreibe ich verschiedene Notizen über alles, das hat mich hier erstaunt oder überrascht. 
+Ich möchte, dass mein Blog nicht nur für die Ausländer sein, deshalb suche ich die Themen und die Fakten über Deutschland, die unbekannt oder interessant für die Deutschen auch sind.
 
-Specify the path to the cover image using the *cover* parameter in the header of the file, e.g.
-`cover: 'assets/images/path_to_your_image.jpg'`, or leave it empty.
+**Haben Sie hier viele dumme Fehler gefunden?**
+Naja, tut mir leid... Ich habe dieses Blog gestartet, um mein Deutsch zu verbessen. Und ich denke, meine A2 Stufe ist die Beste Zeit ein Blog auf Deutsch zu starten!
 
-To add items to the sidebar, edit _includes/navigation.html accordingly.
+Darum fühle ich mich, wie die Hauptfigur des Buches ["Blümen für Algernon"][blumen]:
+jetzt schreibe ich wie ein Kind von drei, aber dann, nach und nach, schreibe ich besser. Das erklärt den Namen des Blog. Übrigens, ich empfehle Ihnen das Buch sehr!
 
+Wenn möchten Sie die Fehler korrigieren, schreiben Sie bitte mir einen Brief:
+<blog.aufdeutsch@yandex.ru>
+
+Viel Spaß beim Lesen!
+
+[blumen]: http://www.amazon.de/dp/3608960295
