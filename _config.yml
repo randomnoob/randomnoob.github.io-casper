@@ -6,7 +6,7 @@ pagination: 5
 # It will appear on home page, in your document head meta (for
 # Google search results) and in your feed.xml site description."
 name: Deutsch für Algernon
-description: "Verschiedene Notizen über Deutschland. Für Alle, auf Deutsch."
+description: "Verschiedene Notizen über deutscher Sprache. Für Alle, auf Deutsch."
 cover: 'assets/images/b2.jpg'
 
 # edit baseurl to simply '/' if using as your personal page (for project page, use /projectname/)
