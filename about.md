@@ -10,7 +10,6 @@ permalink: /about/
 # path to cover image, e.g. assets/images/path/to/cover.img
 cover: 'assets/images/about.jpg'
 ---
-Seit letzte Jahr wohne ich in Deutschland und lerne (sehr gerne) Deutsch.
 Deutsch ist die liebste Sprache der Welt! Shau mal:
 
 > In early times some sufferer had to sit up with a toothache, and he put in the time inventing the German language.
