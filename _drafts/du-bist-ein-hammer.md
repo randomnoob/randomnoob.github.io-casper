@@ -3,9 +3,9 @@
 layout: post
 
 # Edit title, date, tags, author and (optional) relative path to cover image
-title: "Welcome to Jekyll!"
+title: "Du bist der Hammer!"
 date:   2016-03-18 16:07:56
-tags: testtag testtag2
+tags: wortderwoche
 author: adams
 cover: 'assets/images/cover1.jpg'
 ---
