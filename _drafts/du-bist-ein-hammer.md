@@ -7,7 +7,7 @@ title: "Du bist der Hammer!"
 date:   2016-03-18 16:07:56
 tags: wortderwoche
 author: adams
-cover: 'assets/images/cover1.jpg'
+cover: 'assets/images/hammer.jpg'
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it.
