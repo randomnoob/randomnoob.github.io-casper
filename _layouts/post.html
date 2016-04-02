@@ -49,24 +49,40 @@ logo: 'assets/images/ghost.png'
         </section>
 
         <footer class="post-footer">
+            {% if site.single_author == false %}
             {% assign author = site.data.authors | where: "id", page.author | first %}
+            {% else %}
+            {% assign author = site.author %}
+            {% endif %}
 
             <!-- Everything inside the #author tags pulls data from the author -->
             <!-- #author-->
 
             {% if author.image %}
             <figure class="author-image">
+                {% if site.single_author == false %}
                 <a class="img" href="{{ site.baseurl }}author/{{ author.id }}" style="background-image: url({{ site.baseurl }}{{ author.image }})"><span class="hidden">{{ author.id }}'s Picture</span></a>
+                {% else %}
+                <a class="img" style="background-image: url({{ site.baseurl }}{{ author.image }})"><span class="hidden">{{ author.id }}'s Picture</span></a>
+                {% endif %}
             </figure>
             {% endif %}
 
             <section class="author">
-                <h4><a href="{{ site.baseurl }}author/{{ author.id }}">{{ author.name }}</a></h4>
-                
+                <h4>
+                {% if site.single_author == false %}
+                    <a href="{{ site.baseurl }}author/{{ author.id }}">{{ author.name }}</a>
+                {% else %}
+                    {{ author.name }}
+                {% endif %}
+                </h4>
+
                 {% if author.bio %}
                     <p> {{ author.bio }}</p>
                 {% else %}
+                    {% if site.single_author == false %}
                     <p>Read <a href="{{ site.baseurl }}author/{{ author.id }}">more posts</a> by this author.</p>
+                    {% endif %}
                 {% endif %}
                 <div class="author-meta">
                     {% if author.location %}<span class="author-location icon-location"> {{ author.location }}</span>{% endif %}
