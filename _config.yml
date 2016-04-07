@@ -23,9 +23,9 @@ baseurl: /
 url: http://aufdeutsch.github.io/
 
 # ID for Google analytics, leave as '-' to turn it off
-google_analytics: '-'
+google_analytics: 'UA-75106109-1'
 # Username for disqus comments, leave as '-' to turn them off
-disqus: '-'
+disqus: 'aufdeutschgithubio'
 
 # Jykell configuration, edit only if necessary
 markdown: kramdown
